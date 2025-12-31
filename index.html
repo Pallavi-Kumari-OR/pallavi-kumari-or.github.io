@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Data Scientist Portfolio</title>  
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.35);
+            --text-dark: #1f2937;
+            --accent: #2563eb;
+            --muted: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Blurred background circles */
+        .bg-circle {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.85;
+            z-index: -1;
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            background: #0077ff;
+            top: 10%;
+            left: -120px;
+        }
+
+        .circle-2 {
+            width: 300px;
+            height: 300px;
+            background: #8504f6cd;
+            bottom: 45%;
+            right: -150px;
+        }
+
+        .circle-3 {
+            width: 350px;
+            height: 350px;
+            background: #ff0059db;
+            top: 75%;
+            left: 40%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Hero */
+        .hero-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero-header h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+        }
+
+        .hero-header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .hero-description {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--muted);
+            max-width: 900px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        @media (max-width: 768px) {
+            .hero-header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Background Circles -->
+<div class="bg-circle circle-1"></div>
+<div class="bg-circle circle-2"></div>
+<div class="bg-circle circle-3"></div>
+
+<div class="container">
+
+    <!-- Hero Section -->
+    <section class="glass">
+        <div class="hero-header">
+            <h1>Pallavi Kumari</h1>
+            <img src="pallavi-profile.jpg" alt="Profile Photo">
+        </div>
+
+        <p class="hero-description">
+            Aspiring Data Scientist with a strong foundation in statistics, machine learning,
+            optimization, and business analytics. Focused on converting ambiguous business
+            problems into structured analytical solutions that deliver measurable impact.
+            Adept at combining theoretical rigor with practical implementation.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="glass">
+        <h2>Core Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Machine Learning & Statistics</h3>
+                <p>
+                    Developed deep intuition for model behavior, bias–variance trade-offs,
+                    and statistical reliability—ensuring models remain explainable and robust
+                    in real-world environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Analysis & Storytelling</h3>
+                <p>
+                    Strong ability to transform raw datasets into clear narratives using EDA,
+                    feature engineering, and structured business interpretation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Optimization & OR</h3>
+                <p>
+                    Applied linear, integer, and stochastic optimization to resource allocation,
+                    forecasting, and decision-making problems under uncertainty.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Engineering & Deployment</h3> 
+                <p>
+                    Experience building APIs, analytical pipelines, and reproducible workflows,
+                    ensuring models are scalable and production-aligned.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship -->
+    <section class="glass">
+        <h2>Internship Experience</h2>
+
+        <div class="card">
+            <h3>Enterprise Risk Management Intern</h3>
+            <p>
+                <strong>ONGC, New Delhi</strong><br>
+                June 2025 – July 2025
+            </p>
+            <p>
+                Developed a structured understanding of enterprise-wide risk frameworks and how
+                large organizations identify, assess, and monitor strategic, operational, and
+                financial risks.
+            </p>
+            <ul style="margin-top:10px; color:#6b7280; line-height:1.6;">
+                <li>Studied the role of Enterprise Risk Management in organizational decision-making.</li>
+                <li>Understood industry practices for modeling risk impact and likelihood.</li>
+                <li>Designed a sample risk register in Excel to document, prioritize, and track risks.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Qualifications -->
+    <section class="glass">
+        <h2>Academic Qualifications</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Master of Operational Research (Pursuing)</h3>
+                <p>
+                    <strong>Department of Operational Research, University of Delhi</strong><br>
+                    2024-2026 · CGPA: 8.1
+                </p>
+                <p>
+                    Gained rigorous training in optimization, stochastic modeling, simulation,
+                    and decision sciences—strengthening the ability to solve complex, real-world
+                    data-driven business problems under uncertainty.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>B.Sc. Computer Science, Mathematics & Physics</h3>
+                <p>
+                    <strong>Atma Ram Sanatan Dharma College, University of Delhi</strong><br>
+                    Graduated 2023 · CGPA: 8.23
+                </p>
+                <p>
+                    Built a strong interdisciplinary foundation combining programming,
+                    mathematical reasoning, and analytical thinking—forming the backbone
+                    for advanced data science and machine learning work.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="glass">
+        <h2>Key Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Outlier-Resistant Healthcare Premium Model (Regression)</h3>
+                <p>
+                    Built a stable pricing model designed to remain robust against high-cost outlier
+                    patients—addressing a common challenge in healthcare analytics.
+                </p>
+                <ul style="margin-top:10px; color:#6b7280; line-height:1.6;">
+                    <li><strong>Method:</strong> Multiple Linear Regression with log transformation; evaluated using K-Fold Cross Validation and benchmarked against Random Forest.</li>
+                    <li><strong>Result:</strong> Performance improved after hyperparameter tuning — Linear (R²: 0.69), Random Forest (0.78 → 0.94).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Probability of Default Modelling & Credit Scorecard</h3>
+                <p>
+                    Developed a predictive system to estimate Probability of Default (PD) for retail
+                    borrowers, emphasizing interpretability and regulatory alignment.
+                </p>
+                <ul style="margin-top:10px; color:#6b7280; line-height:1.6;">
+                    <li><strong>Method:</strong> Logistic Regression with Weight of Evidence (WoE) transformation and feature binning.</li>
+                    <li><strong>Outcome:</strong> Created an interpretable credit scorecard improving borrower ranking accuracy and supporting data-driven underwriting.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Explainable Machine Learning Model for Churn Prediction (Classification)</h3>
+                <p>
+                    Built an interpretable churn prediction system to support customer retention
+                    strategies and executive decision-making.
+                </p>
+                <ul style="margin-top:10px; color:#6b7280; line-height:1.6;">
+                    <li><strong>Method:</strong> Logistic Regression and Random Forest with SHAP for model explainability.</li>
+                    <li><strong>Result:</strong> Random Forest achieved Precision 0.78, Recall 0.85, AU-ROC 0.882 with clear feature attribution.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="glass">
+        <h2>Contact</h2>
+
+        <p style="max-width:700px; color:#6b7280; line-height:1.7; margin-bottom:20px;">
+            Open to data science, analytics, risk, and operational research opportunities.
+            Feel free to reach out for collaboration, discussions, or professional opportunities.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>LinkedIn</h3>
+                <p>
+                    Connect with me for professional networking, project discussions,
+                    and career-related conversations.
+                </p>
+                <p style="margin-top:10px;">
+                    <a href="https://www.linkedin.com/in/pallavi-kumari-532ba330a"
+                    target="_blank"
+                    style="color:#2563eb; text-decoration:none; font-weight:500;">
+                        linkedin.com/in/pallavi-kumari-532ba330a
+                    </a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Email</h3>
+                <p>
+                    Reach out via email for detailed discussions, interview opportunities,
+                    or formal communication.
+                </p>
+                <p style="margin-top:10px;">
+                    <a href="mailto:pallavipal1612@gmail.com"
+                    style="color:#2563eb; text-decoration:none; font-weight:500;">
+                        pallavipal1612@gmail.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        © 2025 Pallavi Kumari · Data Science Portfolio
+    </footer>
+
+</div>
+</body>
+</html>
+
+
